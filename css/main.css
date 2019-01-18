@@ -1,0 +1,357 @@
+html, body {
+    font-family: 'Lato', sans-serif;
+    background-color: #666;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    border-top: 25px solid #666;
+    border-left: 28px solid #666;
+    border-right: 38px solid #666;
+    margin: 0 100px 10px 2px;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 3px;
+}
+footer {
+
+    border-top: 28px solid #666;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    bottom: -3px;
+    left: 3px;
+
+}
+
+h1 {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-variant: small-caps;
+    font-size: 50px;
+    color: #666;
+    border: #666 1px solid;
+    padding: 50px 50px 20px 50px ;
+    line-height: 40%;
+ }
+
+h1 span {
+    font-size: 20px;
+    text-align: right;
+    padding:  0px;
+    margin-top: 20px;
+}
+
+nav {
+    overflow: hidden;
+  background-color: #f4f4f4;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    ;
+}
+nav ul li{
+    display: flex;
+    flex-direction: row;
+    border: 2px #dcd0c0 solid;
+    background: #fafafa;
+    font-size: 20px;
+    margin: 10px;
+    padding 20px;
+
+}
+
+nav ul li a{
+    margin: 10px;
+    padding 20px;
+
+}
+
+nav ul li a:link {
+    color: #c0b283;
+}
+
+nav ul li a:visited {
+    color: #c0b283;
+}
+
+nav ul li a:hover {
+    color: #373737;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+nav ul li a:active {
+    color: #373737;
+}
+
+
+.container {
+    background-color: #f4f4f4;
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* Set the navbar to fixed position */
+  top: 100px;; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.big {
+    background: #f4f4f4 url(../media/tlo.jpg) no-repeat top left;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+    margin: 0  2px;
+    box-sizing: border-box;
+    border-left: 25px solid #666;
+    border-right: 25px solid #666;
+    height: 99vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.romb {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom-color:#c0b283;
+	position: relative;
+	top: -115px;
+    left: 91px
+}
+.romb:after {
+	content: '';
+	position: absolute;
+	left: -50px;
+	top: 50px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top-color:#666;
+}
+
+#home a:hoover{
+    position: relative;
+}
+
+#home a:hover:after {
+    content: url(../media/me.jpg);
+    border-bottom: 25px solid #666;
+    border-top: 25px solid #c0b283;
+    border-left: 25px solid #666;
+    border-right: 25px solid #c0b283;
+    display: block;
+    position: relative;
+    left: -50px;
+	top: 50px;
+}
+
+#about, #blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666;
+
+}
+#about h2, #blog h2 {
+  text-align: center;
+  float: center;
+  position: relative;
+  left: 0;
+}
+
+#about h2 a, #blog h2{
+    color: #c0b283;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+#about h2 a:hover{
+    letter-spacing: 10px;
+    font-weight: 200;
+    font-variant: small-caps;
+}
+
+.flexi {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    width: 70%;
+    text-align: justify;
+}
+article div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: justify;
+}
+article h2 {
+    position: relative;
+    left: 20%;
+}
+article div p {
+    margin: 0 20px;
+
+}
+#middle {
+    border-left: 1px solid #373737;
+    border-right: 1px solid #373737;
+    padding: 0 40px;
+}
+
+article p::first-letter {
+    font-size: 200%;
+    font-weight: 900;
+    color: #373737;
+}
+video {
+    width: 100%;
+    border-bottom: 25px solid #666;
+    border-top: 25px solid #c0b283;
+    border-left: 25px solid #666;
+    border-right: 25px solid #c0b283;
+
+
+}
+#movie {
+    margin: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+
+
+}
+.shadow {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    width: 30%;
+    right: 10%;
+
+}
+
+.shadow h2 {
+    color: #c0b283;
+    font-size: 2.2em;
+    font-weight: 200;
+    position: absolute;
+    right: 1px;
+
+}
+
+.shadow h3 {
+
+    font-size: 2.5em;
+    font-weight: 100;
+    position: absolute;
+    top: 10%;
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    color: #c0b283;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    color: darkgrey;
+    font-family: 'Lato', sans-serif;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.question {
+    display: block;
+    flex-direction: column;
+    margin: 50px;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    font-weight: 300;
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 200px;
+height: 250px;
+  margin: 10px;
+  text-align: center;
+  font-family: arial;
+font-size: 16px;
+}
+
+.age {
+  color: grey;
+  font-size: 12px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: #666;
+  background-color: #c0b283;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+}
+
+footer a {
+    position: fixed;
+    bottom: 50px;
+    right: -350px;
+
+}
+
+footer a img {
+    height: 10%;
+    width: 10%;
+}

@@ -1,0 +1,21 @@
+<!--    <section class="big" id="contact">-->
+            <div class='question'>
+                <h2>Masz zły humor?? <br> Daj znać, co cię dzisiaj wkurzyło!!</h2>
+                <p> Sąsiadka??</p>
+                <p> Pies sąsiadki??</p>
+                <p> A może nie zaliczyłes majcy??</p>
+            </div>
+            <div class="forms">
+                <form name='myForm' action="./php/send.php" onsubmit="return validateContactData()" method="post">
+                    <label for="name">Imię</label>
+                    <input type="text" name="name" id="fname" placeholder="Name" required><br>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Email" required><br>
+                    <label for="age">Wiek</label>
+                    <input type="number" name="age" id="age" step="1" min="1" placeholder="Age" required><br>
+                    <label for="message">Twoja wiadomość</label>
+                    <textarea maxlength="500" name ="message" id="message" rows="4" cols="50" placeholder required></textarea><br>
+                    <input type="submit" value="SEND">
+                    </form>
+            </div>
+<!--        </section>-->
